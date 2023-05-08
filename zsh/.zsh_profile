@@ -1,0 +1,7 @@
+export XDG_CONFIG_HOME=$HOME/.config
+VIM="nvim"
+
+export GIT_EDITOR=$VIM
+export N_PREFIX="$HOME/.local/n"
+
+export PATH=$HOME/.local/n/bin/:$PATH

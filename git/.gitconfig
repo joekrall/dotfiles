@@ -1,0 +1,8 @@
+[user]
+	name = Joe Krall
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[include]
+      path = ~/.gitconfig_local
