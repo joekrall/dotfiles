@@ -31,4 +31,4 @@ curl -L https://bit.ly/n-install | N_PREFIX=~/.local/n bash -s -- -y -n
 # and NOW for bleeding-edge neovim 
 # =====
 echo "🚀 Getting Neovim prereqs..."
-sudo $PKG_MGR install -yy -q clang unzip ripgrep
+sudo $PKG_MGR install -y -qq clang unzip ripgrep
