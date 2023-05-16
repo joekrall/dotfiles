@@ -1,21 +1,12 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
-if [[ -z $STOW_FOLDERS ]]; then
-    STOW_FOLDERS="git,zsh,nvim"
-fi
+STOW_FOLDERS=("git" "zsh" "nvim")
+DOTFILES=$HOME/dotfiles
 
-if [[ -z $DOTFILES ]]; then
-    DOTFILES=$HOME/dotfiles
-fi
-
-STOW_FOLDERS=$STOW_FOLDERS 
-DOTFILES=$DOTFILES
-
-pushd $DOTFILES
-for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
-do
-    echo "stow $folder"
-    stow -D $folder
-    stow $folder
+pushd ${DOTFILES}
+for i in ${!STOW_FOLDERS[@]}; do
+    echo "stow ${STOW_FOLDERS[$i]}"
+    stow -D ${STOW_FOLDERS[$i]}
+    stow ${STOW_FOLDERS[$i]}
 done
 popd
