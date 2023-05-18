@@ -19,11 +19,6 @@ echo "😎 Installing some good stuff..."
 sudo $PKG_MGR install -y -qq make tree stow zsh 
 
 # =====
-# stowtime
-# =====
-zsh $PWD/stowtime
-
-# =====
 # install oh-my-zsh
 # =====
 echo "😱 Installing oh-my-zsh..."
