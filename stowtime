@@ -3,7 +3,7 @@
 STOW_FOLDERS=("git" "zsh" "nvim")
 DOTFILES=$HOME/dotfiles
 
-pushd $DOTFILES
+pushd ${DOTFILES}
 for i in ${!STOW_FOLDERS[@]}; do
     echo "stow ${STOW_FOLDERS[$i]}"
     stow -D ${STOW_FOLDERS[$i]}
