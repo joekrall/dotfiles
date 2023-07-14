@@ -1,10 +1,10 @@
-export XDG_CONFIG_HOME=$HOME/.config
-VIM="nvim"
-
-export GIT_EDITOR=$VIM
-export GOPATH=$HOME/go
-export N_PREFIX="$HOME/.local/n"
 export DOTFILES=$HOME/dotfiles
+export XDG_CONFIG_HOME=$HOME/.config
 
-export PATH=$HOME/.local/n/bin/:$PATH
-export PATH=$HOME/go/bin:$PATH
+VIM="nvim"
+export GIT_EDITOR=$VIM
+
+export N_PREFIX=$HOME/.local/n
+export PATH=$N_PREFIX/bin/:$PATH
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
