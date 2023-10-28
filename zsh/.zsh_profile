@@ -8,3 +8,13 @@ export N_PREFIX=$HOME/.local/n
 export PATH=$N_PREFIX/bin/:$PATH
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
+
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_AVD_HOME=$HOME/.var/app/com.google.AndroidStudio/config/.android/avd
+export PATH=$PATH:$ANDROID_HOME/emulator:$PATH
+export PATH=$PATH:$ANDROID_HOME/tools:$PATH
+export PATH=$PATH:$ANDROID_HOME/tools/bin:$PATH
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$PATH
+
+
