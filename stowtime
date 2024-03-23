@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STOW_FOLDERS=("git" "zsh" "nvim" "tmux" "fonts")
+STOW_FOLDERS=("git" "zsh" "nvim" "tmux" "fonts" "bin")
 DOTFILES=$HOME/dotfiles
 
 pushd ${DOTFILES}
