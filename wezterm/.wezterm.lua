@@ -6,9 +6,14 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.window_background_opacity = 0.93
-
 config.font_size = 18
+config.font = wezterm.font 'Ubuntu Mono'
+
+config.window_background_opacity = 0.93
+config.color_scheme = 'Tango (base16)'
+config.colors = {
+  background = 'black',
+}
 
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
