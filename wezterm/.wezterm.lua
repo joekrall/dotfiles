@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.font_size = 18
+config.font_size = 14
 config.font = wezterm.font 'Ubuntu Mono'
 
 config.window_background_opacity = 0.93
