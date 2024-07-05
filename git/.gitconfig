@@ -4,6 +4,8 @@
 	editor = vim
 [init]
 	defaultBranch = main
+[diff]
+	colorMoved = zebra
 [includeIf "gitdir:~/personal/"]
   path = ~/personal/.gitconfig.personal
 [includeIf "gitdir:~/work/"]
