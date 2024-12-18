@@ -4,11 +4,16 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
+-- check if macOS
+local is_darwin = function()
+	return wezterm.target_triple:find("darwin") ~= nil
+end
+
 -- This is where you actually apply your config choices
 
 config.use_dead_keys = false
 
-config.font_size = 18
+config.font_size = is_darwin() and 18 or 16 
 config.font = wezterm.font 'Ubuntu Mono'
 
 config.window_background_opacity = 0.93
