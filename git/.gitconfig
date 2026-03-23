@@ -10,3 +10,5 @@
   path = ~/personal/.gitconfig.personal
 [includeIf "gitdir:~/work/"]
   path = ~/work/.gitconfig.work
+[includeIf "gitdir:~/lab/"]
+  path = ~/work/.gitconfig.lab
