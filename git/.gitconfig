@@ -11,4 +11,4 @@
 [includeIf "gitdir:~/work/"]
   path = ~/work/.gitconfig.work
 [includeIf "gitdir:~/lab/"]
-  path = ~/work/.gitconfig.lab
+  path = ~/lab/.gitconfig.lab
