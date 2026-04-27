@@ -13,6 +13,10 @@ end
 
 config.use_dead_keys = false
 
+-- wezterm.home_dir replaces ~
+config.font_dirs = {
+  wezterm.home_dir .. '/dotfiles/fonts'
+}
 config.font_size = is_darwin() and 18 or 16
 config.font = wezterm.font 'Ubuntu Mono'
 
