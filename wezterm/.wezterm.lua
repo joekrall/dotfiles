@@ -18,7 +18,7 @@ config.font_dirs = {
   wezterm.home_dir .. '/dotfiles/fonts'
 }
 config.font_size = is_darwin() and 18 or 16
-config.font = wezterm.font 'Ubuntu Mono'
+config.font = wezterm.font 'Ubuntu Mono Nerd Font'
 
 config.window_decorations = is_darwin() and "TITLE | RESIZE" or "RESIZE"
 config.window_background_opacity = 0.93
