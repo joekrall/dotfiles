@@ -11,6 +11,8 @@ export PATH=$N_PREFIX/bin/:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 
+export PATH=$HOME/.cargo/bin:$PATH
+
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_AVD_HOME=$HOME/.var/app/com.google.AndroidStudio/config/.android/avd
