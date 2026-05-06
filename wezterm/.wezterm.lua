@@ -17,7 +17,7 @@ config.use_dead_keys = false
 config.font_dirs = {
   wezterm.home_dir .. '/dotfiles/fonts'
 }
-config.font_size = is_darwin() and 18 or 16
+config.font_size = is_darwin() and 20 or 16
 config.font = wezterm.font 'Ubuntu Mono'
 
 config.window_decorations = is_darwin() and "TITLE | RESIZE" or "RESIZE"
